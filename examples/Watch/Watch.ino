@@ -2,6 +2,7 @@
 
 int8_t TimeDisp[] = {0x00,0x00,0x00,0x00,0x00,0x00};
 
+//These are Nodemcu pins, for esp 12 you need to charge 12, 14 or any pins of your mcu. 
 #define CLK D5  
 #define DIO D6
 
