@@ -29,9 +29,10 @@
  * THE SOFTWARE.
  */
 #include "TM1637.h"
-//These are Nodemcu pins, for esp 12 you need to charge 12, 14 or any pins of your mcu. 
-#define CLK D5//pins definitions for TM1637 and can be changed to other ports
-#define DIO D6
+
+#define CLK 12 //D6  GPIO12
+#define DIO 13 //D7  GPIO13
+
 TM1637 tm1637(CLK,DIO);
 void setup()
 {
