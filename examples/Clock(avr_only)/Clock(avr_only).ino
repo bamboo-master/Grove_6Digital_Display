@@ -34,7 +34,7 @@
 #define ON 1
 #define OFF 0
 
-int8_t TimeDisp[] = {0x00, 0x00, 0x00, 0x00};
+int8_t TimeDisp[] = {0x00, 0x00, 0x00, 0x00, 0x00};
 unsigned char ClockPoint = 1;
 unsigned char Update;
 unsigned char halfsecond = 0;
@@ -91,5 +91,7 @@ void TimeUpdate(void) {
     TimeDisp[1] = hour % 10;
     TimeDisp[2] = minute / 10;
     TimeDisp[3] = minute % 10;
+    TimeDisp[4] = second / 10;
+    TimeDisp[5] = second % 10;
     Update = OFF;
 }
