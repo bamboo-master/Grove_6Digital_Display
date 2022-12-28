@@ -30,8 +30,8 @@
  */
 #include "TM1637.h"
 
-#define CLK 12 //D6  GPIO12
-#define DIO 13 //D7  GPIO13
+#define CLK 12 
+#define DIO 13 
 
 TM1637 tm1637(CLK,DIO);
 void setup()
@@ -61,7 +61,7 @@ void loop()
     tm1637.display(1,ListDisp[1]);
     tm1637.display(2,ListDisp[2]);
     tm1637.display(3,ListDisp[3]);
-	tm1637.display(4,ListDisp[4]);
+    tm1637.display(4,ListDisp[4]);
     tm1637.display(5,ListDisp[5]);
     delay(300);
   }
