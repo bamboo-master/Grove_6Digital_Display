@@ -24,9 +24,9 @@ void setup() {
 
 void loop() {
 
-int h=12;
-int m=34;
-int s=56;
+h=12;
+m=34;
+s=56;
 
  if (millis() - timing > 1000){ 
  timing = millis(); 
